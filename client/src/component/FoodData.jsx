@@ -56,7 +56,7 @@ export default function FoodData(props) {
     }
 
     function createFoodItem(trackedItem) {
-        fetch("http://localhost:8000/track", {
+        fetch("https://thegalwinapp-11fe06beefea.herokuapp.com/track", {
             method: "POST",
             body: JSON.stringify(trackedItem),
             headers: {
@@ -86,7 +86,7 @@ export default function FoodData(props) {
 
     function updateFoodItem(trackedItem) {
         console.log(`Updating food tracking record with ID: ${trackedItem.id}`);
-        fetch(`http://localhost:8000/track/${trackedItem.id}`, {
+        fetch(`https://thegalwinapp-11fe06beefea.herokuapp.com/track/${trackedItem.id}`, {
             method: "PUT",
             body: JSON.stringify(trackedItem),
             headers: {

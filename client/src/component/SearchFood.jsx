@@ -29,13 +29,13 @@ export default function SearchFood() {
             setLoading(true);
             try {
                 const [foodsResponse, userFoodsResponse] = await Promise.all([
-                    fetch(`http://localhost:8000/foods/${query}`, {
+                    fetch(`https://thegalwinapp-11fe06beefea.herokuapp.com/foods/${query}`, {
                         method: "GET",
                         headers: {
                             "Authorization": `Bearer ${loggedData.loggedUser.token}`
                         }
                     }),
-                    fetch(`http://localhost:8000/userfoods/${query}`, {
+                    fetch(`https://thegalwinapp-11fe06beefea.herokuapp.com/userfoods/${query}`, {
                         method: "GET",
                         headers: {
                             "Authorization": `Bearer ${loggedData.loggedUser.token}`

@@ -42,7 +42,7 @@ function handleSubmit(event)
 
 // ------------------Sending the data to API------------------
 
-fetch("http://localhost:8000/login",{
+fetch("https://thegalwinapp-11fe06beefea.herokuapp.com/login",{
     method:"POST",
     body:JSON.stringify(userCreds),
     headers:{

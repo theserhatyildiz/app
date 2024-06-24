@@ -42,7 +42,7 @@ export default function Register()
 
     // ------------------Sending the data to API------------------
 
-    fetch("http://localhost:8000/register", {
+    fetch("https://thegalwinapp-11fe06beefea.herokuapp.com/register", {
             method: "POST",
             body: JSON.stringify(userDetails),
             headers: {
